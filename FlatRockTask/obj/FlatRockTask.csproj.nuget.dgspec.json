@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Figi & Eri\\Desktop\\Reads-HTML\\FlatRockTask\\FlatRockTask\\FlatRockTask.csproj": {}
+    "C:\\Users\\Figi & Eri\\Desktop\\Reads-HTML\\FlatRockTask\\FlatRockTask.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Figi & Eri\\Desktop\\Reads-HTML\\FlatRockTask\\FlatRockTask\\FlatRockTask.csproj": {
+    "C:\\Users\\Figi & Eri\\Desktop\\Reads-HTML\\FlatRockTask\\FlatRockTask.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Figi & Eri\\Desktop\\Reads-HTML\\FlatRockTask\\FlatRockTask\\FlatRockTask.csproj",
+        "projectUniqueName": "C:\\Users\\Figi & Eri\\Desktop\\Reads-HTML\\FlatRockTask\\FlatRockTask.csproj",
         "projectName": "FlatRockTask",
-        "projectPath": "C:\\Users\\Figi & Eri\\Desktop\\Reads-HTML\\FlatRockTask\\FlatRockTask\\FlatRockTask.csproj",
+        "projectPath": "C:\\Users\\Figi & Eri\\Desktop\\Reads-HTML\\FlatRockTask\\FlatRockTask.csproj",
         "packagesPath": "C:\\Users\\Figi & Eri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Figi & Eri\\Desktop\\Reads-HTML\\FlatRockTask\\FlatRockTask\\obj\\",
+        "outputPath": "C:\\Users\\Figi & Eri\\Desktop\\Reads-HTML\\FlatRockTask\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Figi & Eri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.48, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jvDGUuD87bMnrawTDd2mz+XxULr2SiHGSVOUGIh4FjIwwBuV6c8pmSvH1umCRW5jZQeDXdYDDkfTy9aKNWsZIQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Figi & Eri\\Desktop\\Reads-HTML\\FlatRockTask\\FlatRockTask.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Figi & Eri\\.nuget\\packages\\htmlagilitypack\\1.11.48\\htmlagilitypack.1.11.48.nupkg.sha512"
+  ],
+  "logs": []
+}
