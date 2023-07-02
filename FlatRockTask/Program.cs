@@ -15,11 +15,12 @@ var productPrices = data.DocumentNode.SelectNodes("//div[@class='pricing']/p/spa
  .Select(x => x.InnerText).ToList();
 
 var productRatings = data.DocumentNode.SelectNodes("/div[@class='item']")
-    .Select(x => x.GetAttributeValue("rating", "")).Select(x => decimal.Parse(x, CultureInfo.InvariantCulture))
+    .Select(x => x.GetAttributeValue("rating", ""))
+    .Select(x => decimal.Parse(x, CultureInfo.InvariantCulture))
     .ToList();
 
 List<decimal> normalRatings = new List<decimal>();
-var products = new List<Product>();
+List<Product> products = new List<Product>();
 
 foreach (var item in productRatings)
 {
@@ -37,7 +38,6 @@ foreach (var item in productRatings)
     }
 }
 
-
 for (int i = 0; i < productNames.Count; i++)
 {
     var price = productPrices.ElementAt(i).Split("$", StringSplitOptions.RemoveEmptyEntries).ToArray();
@@ -50,6 +50,6 @@ for (int i = 0; i < productNames.Count; i++)
     });
 }
 
-var productsJson = JsonConvert.SerializeObject(products, Formatting.Indented);
+string productsJson = JsonConvert.SerializeObject(products, Formatting.Indented);
 
 Console.WriteLine(productsJson);
