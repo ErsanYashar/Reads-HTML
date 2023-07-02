@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "jvDGUuD87bMnrawTDd2mz+XxULr2SiHGSVOUGIh4FjIwwBuV6c8pmSvH1umCRW5jZQeDXdYDDkfTy9aKNWsZIQ==",
+  "dgSpecHash": "g6iHm624oIBhSC5HDmnXCGuZEXsZlr5lzPTOaL7sM5dRJTfzgsyUGmFb/AD5N0vL9CQBnTPeqpmQTaU/6F7Dvg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Figi & Eri\\Desktop\\Reads-HTML\\FlatRockTask\\FlatRockTask.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Figi & Eri\\.nuget\\packages\\htmlagilitypack\\1.11.48\\htmlagilitypack.1.11.48.nupkg.sha512"
+    "C:\\Users\\Figi & Eri\\.nuget\\packages\\htmlagilitypack\\1.11.48\\htmlagilitypack.1.11.48.nupkg.sha512",
+    "C:\\Users\\Figi & Eri\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

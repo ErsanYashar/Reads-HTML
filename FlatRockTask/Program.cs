@@ -1,5 +1,6 @@
 ﻿using FlatRockTask;
 using HtmlAgilityPack;
+using Newtonsoft.Json;
 using System.Globalization;
 
 HtmlDocument data = new HtmlDocument();
@@ -17,8 +18,8 @@ var productRatings = data.DocumentNode.SelectNodes("/div[@class='item']")
     .Select(x => x.GetAttributeValue("rating", "")).Select(x => decimal.Parse(x, CultureInfo.InvariantCulture))
     .ToList();
 
-//List<decimal> ratings = productRatings.Select(x => decimal.Parse(x, CultureInfo.InvariantCulture)).ToList();
 List<decimal> normalRatings = new List<decimal>();
+var products = new List<Product>();
 
 foreach (var item in productRatings)
 {
@@ -36,4 +37,19 @@ foreach (var item in productRatings)
     }
 }
 
-var product = new List<Product>();
+
+for (int i = 0; i < productNames.Count; i++)
+{
+    var price = productPrices.ElementAt(i).Split("$", StringSplitOptions.RemoveEmptyEntries).ToArray();
+
+    products.Add(new Product
+    {
+        ProductName = names.ElementAt(i),
+        Price = price[1].Replace(",", ""),
+        Rating = Math.Round(normalRatings.ElementAt(i), 1)
+    });
+}
+
+var productsJson = JsonConvert.SerializeObject(products, Formatting.Indented);
+
+Console.WriteLine(productsJson);

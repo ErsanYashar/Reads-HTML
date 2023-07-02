@@ -32,3 +32,4 @@ C:\Users\Figi & Eri\Desktop\Reads-HTML\FlatRockTask\obj\Debug\net6.0\FlatRockTas
 C:\Users\Figi & Eri\Desktop\Reads-HTML\FlatRockTask\obj\Debug\net6.0\ref\FlatRockTask.dll
 C:\Users\Figi & Eri\Desktop\Reads-HTML\FlatRockTask\obj\Debug\net6.0\FlatRockTask.pdb
 C:\Users\Figi & Eri\Desktop\Reads-HTML\FlatRockTask\obj\Debug\net6.0\FlatRockTask.genruntimeconfig.cache
+C:\Users\Figi & Eri\Desktop\Reads-HTML\FlatRockTask\bin\Debug\net6.0\Newtonsoft.Json.dll
